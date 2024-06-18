@@ -1,2 +1,2 @@
 # Llama2
-Contains script to run Llama2 models
+Script to run Llama2 models - CPU only
