@@ -4,9 +4,10 @@ from langchain.chains import LLMChain
 from langchain.callbacks.manager import CallbackManager
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 
+# Path to Llama model
 MODEL_PATH = "/home/snadar2/llama/llama-2-7b.gguf.q8_0.bin"
 
-# 1. Create a function to load Llama model
+# Creating a function to load Llama model
 def load_model():
     """Loads Llama model"""
     # Creating callback
@@ -21,12 +22,16 @@ def load_model():
     )
 
     return Llama_model
-
+    
+# Calling load_model()
 llm = load_model()
+
+# Adding model prompt
 model_prompt: str = """
 Question: Explain the purpose of data encryption in cyber security
 """
 
+# Getting and printing response
 response: str = llm.invoke(model_prompt)
 print(response)
 
