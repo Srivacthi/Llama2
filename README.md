@@ -14,4 +14,4 @@ Script to run Llama2 models - CPU only
     wget [download link]
 7 - edit model path on python file
 8 - on the directory with the python llama_cpu.py run the file
-    python llama_cpu.py
+    python llama_cpu.py 
